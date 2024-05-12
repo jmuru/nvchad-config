@@ -24,21 +24,6 @@ require("lazy").setup({
       require "options"
     end,
   },
-  {
-    "williamboman/mason.nvim",
-    config = function()
-      require("mason").setup()
-    end
-  },
-  -- Optionally, include Mason LSP Config
-  {
-    "williamboman/mason-lspconfig.nvim",
-    config = function()
-      require("mason-lspconfig").setup {
-        -- Optional settings
-      }
-    end
-  },
   { import = "plugins" },
 }, lazy_config)
 
